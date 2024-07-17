@@ -7,17 +7,17 @@ titleTemplate: 编程之路
 hero:
   name: 南忆
   text: 后台权限管理
-  tagline: 学习是我快乐
+  tagline: 学习让我我快乐
   #  image:
   #    src: /images/auth.png
   #    alt: 中台Admin
   actions:
     - theme: brand
       text: 立即上手
-      link: /admin/backend/new-project
+      link: /base
     - theme: alt
       text: 了解更多
-      link: /admin/introduce
+      link: /base
 features:
   - icon: 👷
     title: Java

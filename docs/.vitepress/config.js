@@ -71,26 +71,49 @@ export default {
             {
                 text: 'Java',
                 items: [
-                    {text: 'introduction', link: '/introduction'},
-
-                ]
-            },
-            {
-                text: 'Python',
-                items: [
-                    {text: 'Item A', link: '/item-1'},
+                    {text: 'JavaSE', link: '/introduction'},
+                    {text: 'JUC', link: '/404'},
+                    {text: 'JVM', link: '/404'},
+                    {text: 'Spring全家桶', link: '/404'},
+                    {text: 'SpringCloud', link: '/404'},
                 ]
             },
             {
                 text: 'Web',
                 items: [
-                    {text: 'Item A', link: '/item-1'},
+                    {text: 'html', link: '/404'},
+                    {text: 'css', link: '/404'},
+                    {text: 'javascript', link: '/404'},
                 ]
             },
             {
                 text: 'DevOps',
                 items: [
-                    {text: 'Item A', link: '/item-1'},
+                    {text: 'linux', link: '/404'},
+                ]
+            },
+            {
+                text: 'Python',
+                items: [
+                    {text: 'Python基础', link: '/404'},
+                ]
+            },
+            {
+                text: 'DotNet',
+                items: [
+                    {text: '暂无', link: '#'},
+                ]
+            },
+            {
+                text: 'Golang',
+                items: [
+                    {text: '暂无', link: '#'},
+                ]
+            },
+            {
+                text: 'Rust',
+                items: [
+                    {text: '暂无', link: '#'},
                 ]
             }
         ]
