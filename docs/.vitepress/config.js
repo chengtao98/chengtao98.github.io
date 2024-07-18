@@ -56,28 +56,38 @@ export default {
         /*侧边栏*/
         sidebar: {
             // 当用户位于 `guide` 目录时，会显示此侧边栏
-           /* '/introduction/': [
+           '/middleware/message/': [
+                {text: 'Rocket', link: '/middleware/message/rocket'},
+                {text: 'RabbitMQ', link: '/middleware/message/rabbit'},
+                {text: 'Kafka', link: '/middleware/message/kafka'}
+            ],
+            '/middleware/database': [
                 {
-                    text: 'introduction',
+                    text: '数据库中间件',
                     items: [
-                        {text: 'Index', link: '/guide/'},
-                        {text: 'One', link: '/guide/one'},
-                        {text: 'Two', link: '/guide/two'}
-                    ]
-                }
-            ],*/
-
-            // 当用户位于 `config` 目录时，会显示此侧边栏
-            '/config/': [
-                {
-                    text: 'Config',
-                    items: [
-                        {text: 'Index', link: '/config/'},
-                        {text: 'Three', link: '/config/three'},
-                        {text: 'Four', link: '/config/four'}
+                        {text: 'ShardingSphere', link: '/middleware/database/ShardingSphere'},
+                        {text: 'Mycat', link: '/middleware/database/Mycat'},
                     ]
                 }
             ],
+            '/database/SQL':[
+                {text: 'Mysql', link: '/database/SQL/mysql'},
+                {text: 'PostgresSQL', link: '/database/SQL/PostgresSQL'},
+                {text: 'SQLServer', link: '/database/SQL/SQLServer'},
+                {text: 'Oracle', link: '/database/SQL/Oracle'},
+            ],
+            '/database/NoSQL':[
+                {text: 'Redis', link: '/database/NoSQL/Redis'},
+                {text: 'Elasticsearch', link: '/database/NoSQL/Elasticsearch'},
+                {text: 'MongoDB', link: '/database/NoSQL/MongoDB'},
+            ],
+
+            '/program':[
+                {text: '数据结构与算法', link: '/program/dataStructure'},
+                {text: '设计模式', link: '/program/design', prev: '/program/dataStructure'},
+                {text: '计算机网络', link: '/program/network'},
+                {text: '操作系统', link: '/program/os'},
+            ]
         },
         /*导航栏*/
         nav: [
@@ -90,7 +100,7 @@ export default {
                         items: [
                             {
                                 text: '面向对象',
-                                link: '/introduction',
+                                link: '/home',
                             },
                         ],
                     },
@@ -157,10 +167,10 @@ export default {
             {
                 text: '计算机四大件',
                 items: [
-                    {text: '数据结构与算法', link: '/404'},
-                    {text: '设计模式', link: '/404'},
-                    {text: '计算机网络', link: '/404'},
-                    {text: '操作系统', link: '/404'},
+                    {text: '数据结构与算法', link: '/program/dataStructure'},
+                    {text: '设计模式', link: '/program/design'},
+                    {text: '计算机网络', link: '/program/network'},
+                    {text: '操作系统', link: '/program/os'},
                 ]
             },
             {
@@ -169,18 +179,18 @@ export default {
                     {
                         text: '🥦 关系型数据库',
                         items: [
-                            {text: 'Mysql', link: '/404'},
-                            {text: 'PostgresSQL', link: '/404'},
-                            {text: 'SQLServer', link: '/404'},
-                            {text: 'Oracle', link: '/404'},
+                            {text: 'Mysql', link: '/database/SQL/mysql'},
+                            {text: 'PostgresSQL', link: '/database/SQL/PostgresSQL'},
+                            {text: 'SQLServer', link: '/database/SQL/SQLServer'},
+                            {text: 'Oracle', link: '/database/SQL/Oracle'},
                         ],
                     },
                     {
                         text: '🏠 非关系型数据库',
                         items: [
-                            {text: 'Redis', link: '/404'},
-                            {text: 'Elasticsearch', link: '/404'},
-                            {text: 'MongoDB', link: '/404'},
+                            {text: 'Redis', link: '/database/NoSQL/Redis'},
+                            {text: 'Elasticsearch', link: '/database/NoSQL/Elasticsearch'},
+                            {text: 'MongoDB', link: '/database/NoSQL/MongoDB'},
                         ],
                     },
 
@@ -192,22 +202,21 @@ export default {
                     {
                         text: '🥦 消息中间件',
                         items: [
-                            {text: 'RabbitMQ', link: '/404'},
-                            {text: 'RocketMQ', link: '/404'},
-                            {text: 'Kafka', link: '/404'},
+                            {text: 'Rocket', link: '/middleware/message/rocket'},
+                            {text: 'RabbitMQ', link: '/middleware/message/rabbit'},
+                            {text: 'Kafka', link: '/middleware/message/kafka'},
                         ],
                     },
                     {
                         text: '🏠 数据库中间件',
                         items: [
-                            {text: 'ShardingSphere', link: '/404'},
-                            {text: 'Mycat', link: '/404'},
+                            {text: 'ShardingSphere', link: '/middleware/database/ShardingSphere'},
+                            {text: 'Mycat', link: '/middleware/database/mycat'},
                         ],
                     },
                 ]
             }
         ]
-        /*尾部*/
     }
 
 }

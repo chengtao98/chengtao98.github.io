@@ -14,10 +14,10 @@ hero:
   actions:
     - theme: brand
       text: 立即上手
-      link: /base
+      link: /home/left
     - theme: alt
       text: 了解更多
-      link: /base
+      link: /home/right
 features:
   - icon: 👷
     title: 计算机四大件
