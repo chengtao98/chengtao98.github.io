@@ -1,12 +1,25 @@
+import mdItCustomAttrs from 'markdown-it-custom-attrs'
 export default {
     title: 'Java成长之路',
     description: '只要学不死，就往死里学！',
     head: [
         ['link', {rel: 'icon', href: '/favicon.ico'}],
     ],
+    markdown:{
+        config: (md) => {
+            md.use(mdItCustomAttrs, 'image', {
+                'data-fancybox': 'gallery',
+            })
+        },
+        codeCopyButtonTitle: '复制代码',
+    },
+    lastUpdated: true,
+    ignoreDeadLinks: true,
+    cleanUrls: false,
     themeConfig: {
         siteTitle: 'combat',
         logo: '/images/logo-mini.svg',
+        outlineTitle: '导航目录',
         search: {
             provider: 'local',
             options: {
@@ -39,10 +52,11 @@ export default {
             message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
             copyright: 'Copyright © 2019-present <a href="https://github.com/yyx990803">Evan You</a>'
         },
+
         /*侧边栏*/
         sidebar: {
             // 当用户位于 `guide` 目录时，会显示此侧边栏
-            '/introduction/': [
+           /* '/introduction/': [
                 {
                     text: 'introduction',
                     items: [
@@ -51,7 +65,7 @@ export default {
                         {text: 'Two', link: '/guide/two'}
                     ]
                 }
-            ],
+            ],*/
 
             // 当用户位于 `config` 目录时，会显示此侧边栏
             '/config/': [
@@ -63,7 +77,7 @@ export default {
                         {text: 'Four', link: '/config/four'}
                     ]
                 }
-            ]
+            ],
         },
         /*导航栏*/
         nav: [
@@ -71,7 +85,15 @@ export default {
             {
                 text: 'Java',
                 items: [
-                    {text: 'JavaSE', link: '/introduction'},
+                    {
+                        text: '🥦 JavaSE',
+                        items: [
+                            {
+                                text: '面向对象',
+                                link: '/introduction',
+                            },
+                        ],
+                    },
                     {text: 'JUC', link: '/404'},
                     {text: 'JVM', link: '/404'},
                     {text: 'Spring全家桶', link: '/404'},
@@ -81,39 +103,107 @@ export default {
             {
                 text: 'Web',
                 items: [
-                    {text: 'html', link: '/404'},
-                    {text: 'css', link: '/404'},
-                    {text: 'javascript', link: '/404'},
+                    {
+                        text: '🥦 基础以及提升篇',
+                        items: [
+                            {text: 'Html', link: '/404'},
+                            {text: 'Css', link: '/404'},
+                            {text: 'JavaScript', link: '/404'},
+                            {text: 'TypeScript', link: '/404'},
+                        ],
+                    },
+                    {
+                        text: '🥦 服务器端',
+                        items: [
+                            {text: 'Node', link: '/404'},
+                            {text: 'Express', link: '/frontend/server/express/page'},
+                            {text: 'Nest', link: '/404'},
+                        ],
+                    },
+                    {
+                        text: '🏠 三大主流框架',
+                        items: [
+                            {text: 'React', link: '/404'},
+                            {text: 'Vue', link: '/404'},
+                            {text: 'Angular', link: '/404'},
+                        ],
+                    },
+                    {
+                        text: '🏠 跨平台开发',
+                        items: [
+                            {text: 'uni-app', link: '/404'},
+                            {text: 'Taro', link: '/404'},
+                        ],
+                    },
                 ]
             },
             {
                 text: 'DevOps',
                 items: [
                     {text: 'linux', link: '/404'},
+                    {text: 'docker', link: '/404'},
+                    {text: 'Jenkins', link: '/404'},
+                    {text: 'k8s', link: '/404'},
                 ]
             },
             {
                 text: 'Python',
                 items: [
                     {text: 'Python基础', link: '/404'},
+                    {text: '面向对象', link: '/404'},
+                    {text: '多进程多线程', link: '/404'},
                 ]
             },
             {
-                text: 'DotNet',
+                text: '计算机四大件',
                 items: [
-                    {text: '暂无', link: '#'},
+                    {text: '数据结构与算法', link: '/404'},
+                    {text: '设计模式', link: '/404'},
+                    {text: '计算机网络', link: '/404'},
+                    {text: '操作系统', link: '/404'},
                 ]
             },
             {
-                text: 'Golang',
+                text: '数据库',
                 items: [
-                    {text: '暂无', link: '#'},
+                    {
+                        text: '🥦 关系型数据库',
+                        items: [
+                            {text: 'Mysql', link: '/404'},
+                            {text: 'PostgresSQL', link: '/404'},
+                            {text: 'SQLServer', link: '/404'},
+                            {text: 'Oracle', link: '/404'},
+                        ],
+                    },
+                    {
+                        text: '🏠 非关系型数据库',
+                        items: [
+                            {text: 'Redis', link: '/404'},
+                            {text: 'Elasticsearch', link: '/404'},
+                            {text: 'MongoDB', link: '/404'},
+                        ],
+                    },
+
                 ]
             },
             {
-                text: 'Rust',
+                text: '中间件',
                 items: [
-                    {text: '暂无', link: '#'},
+                    {
+                        text: '🥦 消息中间件',
+                        items: [
+                            {text: 'RabbitMQ', link: '/404'},
+                            {text: 'RocketMQ', link: '/404'},
+                            {text: 'Kafka', link: '/404'},
+                        ],
+                    },
+                    {
+                        text: '🏠 数据库中间件',
+                        items: [
+                            {text: 'ShardingSphere', link: '/404'},
+                            {text: 'Mycat', link: '/404'},
+                        ],
+                    },
                 ]
             }
         ]
