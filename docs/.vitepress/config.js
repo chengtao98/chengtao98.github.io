@@ -106,14 +106,51 @@ export default {
                         text: '🥦 JavaSE',
                         items: [
                             {
+                                text: 'Java基础',
+                                link: '/java/javase/index',
+                            },
+                            {
                                 text: '面向对象',
-                                link: '/home',
+                                link: '/java/javase/oop/index',
+                            },
+                            {
+                                text: '多线程',
+                                link: '/java/javase/thread/index',
                             },
                         ],
                     },
-                    {text: 'JUC', link: '/404'},
-                    {text: 'JVM', link: '/404'},
-                    {text: 'Spring全家桶', link: '/404'},
+                    {text: 'JUC', link: '/java/juc/index'},
+                    {text: 'JVM', link: '/java/jvm/index'},
+                    {text: '🎁 Spring全家桶',
+                        items: [
+                            {
+                                text: 'Spring',
+                                link: '/java/spring/index',
+                            },
+                            {
+                                text: 'SpringMVC',
+                                link: '/java/springmvc/index',
+                            },
+                            {
+                                text: 'SpringBoot',
+                                link: '/java/springboot/index',
+                            },
+                            {
+                                text: 'SpringSecurity',
+                                link: '/java/springsecurity/index',
+                            },
+                        ],},
+                    {text: '🏠 Orm',
+                        items: [
+                            {
+                                text: 'Mybatis',
+                                link: '/java/mybatis/index',
+                            },
+                            {
+                                text: 'MybatisPlus',
+                                link: '/java/mybatisplus/index',
+                            }
+                        ],},
                     {text: 'SpringCloud', link: '/404'},
                 ]
             },
@@ -132,24 +169,24 @@ export default {
                     {
                         text: '🥦 服务器端',
                         items: [
-                            {text: 'Node', link: '/404'},
+                            {text: 'Node', link: '/frontend/server/node'},
                             {text: 'Express', link: '/frontend/server/express/page'},
-                            {text: 'Nest', link: '/404'},
+                            {text: 'NestJS', link: '/frontend/server/nest'},
                         ],
                     },
                     {
                         text: '🏠 三大主流框架',
                         items: [
-                            {text: 'React', link: '/404'},
-                            {text: 'Vue', link: '/404'},
-                            {text: 'Angular', link: '/404'},
+                            {text: 'React', link: '/frontend/js/react'},
+                            {text: 'Vue', link: '/frontend/js/vue'},
+                            {text: 'Angular', link: '/frontend/js/angular'},
                         ],
                     },
                     {
                         text: '♥️ 跨平台开发',
                         items: [
-                            {text: 'uni-app', link: '/404'},
-                            {text: 'Taro', link: '/404'},
+                            {text: 'uni-app', link: '/frontend/app/uniapp'},
+                            {text: 'Taro', link: '/frontend/app/taro'},
                         ],
                     },
                 ]
@@ -164,11 +201,9 @@ export default {
                 ]
             },
             {
-                text: 'Python',
+                text: 'python',
                 items: [
-                    {text: 'Python基础', link: '/404'},
-                    {text: '面向对象', link: '/404'},
-                    {text: '多进程多线程', link: '/404'},
+                    {text: 'Python基础', link: '/python/base/index'},
                 ]
             },
             {

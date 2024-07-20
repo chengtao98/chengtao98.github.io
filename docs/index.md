@@ -30,7 +30,7 @@ features:
     details: RabbitMQ、RocketMQ、kafka、MyCat、Sharding sphere等
   - icon: 👷
     title: 后端
-    details: Java、Python
+    details: Java、python
   - icon: 🚀
     title: 前端
     details: Html、Css、JavaScript、TypeScript、React、Vue等
