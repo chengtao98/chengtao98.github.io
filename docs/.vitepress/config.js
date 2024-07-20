@@ -17,6 +17,7 @@ export default {
     ignoreDeadLinks: true,
     cleanUrls: false,
     themeConfig: {
+        lastUpdatedText: "最近更新时间",
         siteTitle: 'combat',
         logo: '/images/logo-mini.svg',
         outlineTitle: '导航目录',
@@ -87,6 +88,12 @@ export default {
                 {text: '设计模式', link: '/program/design', prev: '/program/dataStructure'},
                 {text: '计算机网络', link: '/program/network'},
                 {text: '操作系统', link: '/program/os'},
+            ],
+            'frontend/base':[
+                {text: 'Html', link: '/frontend/base/html/index'},
+                {text: 'Css', link: '/frontend/base/css/index'},
+                {text: 'JavaScript', link: '/frontend/base/javascript/index'},
+                {text: 'TypeScript', link: '/frontend/base/typescript/index'},
             ]
         },
         /*导航栏*/
@@ -114,12 +121,12 @@ export default {
                 text: 'Web',
                 items: [
                     {
-                        text: '🥦 基础以及提升篇',
+                        text: '🎁 基础以及提升篇',
                         items: [
-                            {text: 'Html', link: '/404'},
-                            {text: 'Css', link: '/404'},
-                            {text: 'JavaScript', link: '/404'},
-                            {text: 'TypeScript', link: '/404'},
+                            {text: 'Html', link: '/frontend/base/html/index'},
+                            {text: 'Css', link: '/frontend/base/css/index'},
+                            {text: 'JavaScript', link: '/frontend/base/javascript/index'},
+                            {text: 'TypeScript', link: '/frontend/base/typescript/index'},
                         ],
                     },
                     {
@@ -139,7 +146,7 @@ export default {
                         ],
                     },
                     {
-                        text: '🏠 跨平台开发',
+                        text: '♥️ 跨平台开发',
                         items: [
                             {text: 'uni-app', link: '/404'},
                             {text: 'Taro', link: '/404'},
